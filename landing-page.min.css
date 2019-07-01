@@ -1,0 +1,608 @@
+body {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top: 5.3rem;
+}
+
+@media (max-width: 769px) {
+    body {
+        padding-top: 4.3rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 2rem;
+    }
+}
+
+p {
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row:after, .row:before {
+    display: inline-block !important;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    display: -webkit-inline-box;
+}
+
+section, section .container {
+    position: relative;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    #header .container {
+        max-width: 90%;
+        display: flow-root;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8ac832;
+}
+
+button:focus {
+    outline: none;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.affix {
+    position: fixed;
+}
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url(../img/bg-masthead.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+    header.masthead .overlay {
+        position: absolute;
+        background-color: #212529;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: .3;
+    }
+
+    header.masthead h1 {
+        font-size: 2rem;
+    }
+
+@media (min-width:768px) {
+    header.masthead {
+        padding-top: 6rem;
+        padding-bottom: 12rem;
+    }
+
+        header.masthead h1 {
+            font-size: 3rem;
+        }
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+
+@media (min-width:768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+    .features-icons .features-icons-item {
+        max-width: 20rem;
+    }
+
+        .features-icons .features-icons-item .features-icons-icon {
+            height: 7rem;
+        }
+
+            .features-icons .features-icons-item .features-icons-icon i {
+                font-size: 4.5rem;
+            }
+
+        .features-icons .features-icons-item:hover .features-icons-icon i {
+            font-size: 5rem;
+        }
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+    .testimonials .testimonial-item {
+        max-width: 18rem;
+    }
+
+        .testimonials .testimonial-item img {
+            max-width: 12rem;
+            box-shadow: 0 5px 5px 0 #adb5bd;
+        }
+
+.call-to-action {
+    position: relative;
+    background-color: #1a4b88;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+/*.call-to-action .overlay {
+	position: absolute;
+	background-color: #212529;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .3
+}*/
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.opt-inv-ent {
+    position: relative;
+    display: inline-block;
+}
+
+.ain-select-btn {
+    border: 1px solid #ffffff;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.options-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 100%;
+    top: 45px;
+    padding: 14px 0;
+    z-index: 99;
+}
+
+    .options-wrapper a {
+        display: block;
+        text-align: left;
+        padding: 6px 8px 6px 24px;
+        color: #444;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+.opt-inv-ent:hover .options-wrapper {
+    display: block;
+}
+
+.iam {
+    color: #fff;
+    font-size: 28px;
+    padding-right: 20px;
+}
+
+.card-container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.card-container2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .listing-wrapper {
+        margin-bottom: 2rem;
+    }
+}
+
+.home-slider-holder {
+    z-index: 10005;
+    position: absolute;
+    padding: 15px 0px 0;
+    direction: ltr;
+    opacity: 0;
+    border-top: 1px solid #c4c4c4;
+}
+
+@media (max-width: 1200px) {
+    .home-slider-holder {
+        display: none;
+    }
+}
+
+.home-slide:hover div .home-slider-holder {
+    opacity: 1;
+    left: 8vw;
+    bottom: 100px;
+}
+
+.home-slider-holder .slider-inner-skew {
+    /*transform: skew(-20deg) translateX(-20px);*/
+    pointer-events: all;
+}
+
+    .home-slider-holder .slider-inner-skew .slider-inner-skew-back {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .home-slider-holder .slider-inner-skew h3 {
+        color: #000000;
+    }
+
+.home-slider-holder .slider-inner-skew-back ul {
+    display: flex;
+    margin-left: 0;
+}
+
+    .home-slider-holder .slider-inner-skew-back ul li {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0px;
+        line-height: 50px;
+    }
+
+        .home-slider-holder .slider-inner-skew-back ul li:nth-child(2) {
+            margin-left: 20px;
+        }
+
+        .home-slider-holder .slider-inner-skew-back ul li a {
+            color: #000000;
+            vertical-align: middle;
+            display: flex;
+        }
+
+            .home-slider-holder .slider-inner-skew-back ul li a:hover {
+                color: #87c232;
+            }
+
+        .home-slider-holder .slider-inner-skew-back ul li img {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            left: -4px;
+        }
+
+            .home-slider-holder .slider-inner-skew-back ul li img.fa-invest {
+                background-image: url(/img/invest.svg);
+                background-repeat: no-repeat;
+            }
+
+            .home-slider-holder .slider-inner-skew-back ul li img.fa-business {
+                background-image: url(/img/business.svg);
+                background-repeat: no-repeat;
+            }
+
+        .home-slider-holder .slider-inner-skew-back ul li i {
+            font-size: 2rem;
+            color: #fff;
+            display: block;
+            line-height: 80px;
+        }
+
+.bg-skew {
+    overflow: hidden;
+    padding-bottom: 10rem;
+}
+
+    .bg-skew:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background-color: #f8f9fa;
+        transform: translateY(-5vw) skewY(-5deg);
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../img/line-pattern.svg);
+    background-size: 20px;
+    z-index: 9;
+    background-color: #fff;
+    position: relative;
+    border-top: 1px solid #f1f1f1;
+}
+
+    footer ul li a {
+        color: #6a6e71;
+    }
+
+        footer ul li a:hover {
+            color: #8ac832;
+        }
+
+        footer ul li a.ico-facebook:hover {
+            color: #37589b;
+        }
+
+        footer ul li a.ico-insta:hover{
+            color: #8a3ab9;
+        }
+
+        footer ul li a.ico-twitter:hover {
+            color: #1da1f2;
+        }
+
+        footer ul li a.ico-linkedin:hover {
+            color: #0077b5;
+        }
+
+@media (max-width: 769px) {
+    footer h5 {
+        font-size: 16px;
+    }
+
+    footer ul li a {
+        font-size: 14px;
+    }
+}
+
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+    .product-device::before {
+        position: absolute;
+        top: 10%;
+        right: 10px;
+        bottom: 10%;
+        left: 10px;
+        content: "";
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 5px;
+    }
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.owl-carousel .owl-stage {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.owl-investor .owl-item {
+    margin: 0px 20px 0px 20px !important;
+    background: #343a40;
+}
+
+@media only screen and (max-width: 961px) and (min-width: 769px) {
+    .owl-investor .owl-info {
+        width: 100% !important;
+    }
+}
+
+.owl-investor .owl-item:nth-child(1) {
+    background-image: url(../img/Investor%20Snip%20Bits/1.jpg);
+    background-size: cover;
+}
+
+.owl-investor .owl-item:nth-child(2) {
+    background-image: url(../img/Investor%20Snip%20Bits/1.jpg);
+    background-size: cover;
+}
+
+.owl-investor .owl-item:nth-child(3) {
+    background-image: url(../img/Investor%20Snip%20Bits/1.jpg);
+    background-size: cover;
+}
+
+.owl-investor .owl-item:nth-child(4) {
+    background-image: url(../img/Investor%20Snip%20Bits/1.jpg);
+    background-size: cover;
+}
+
+.owl-investor .owl-item:nth-child(5) {
+    background-image: url(../img/Investor%20Snip%20Bits/1.jpg);
+    background-size: cover;
+}
+
+.owl-investor .owl-item:nth-child(6) {
+    background-image: url(../img/Investor%20Snip%20Bits/1.jpg);
+    background-size: cover;
+}
+
+.owl-business .owl-item {
+    margin: 0px 20px 0px 20px !important;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.owl-text p {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #4d504d;
+}
+
+@media( max-width: 768px) {
+    .owl-text p {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+}
+
+.investor-card, .business-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.9019607843137255);
+    background-clip: border-box;
+}
+
+    .investor-card ul li, .business-card ul li {
+        list-style: none;
+    }
+
+.investor-card-body p,
+.investor-card-body ul li {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+    .investor-card-body p.card-text small,
+    .investor-card-body p.card-text .small {
+        font-size: 95% !important;
+        font-weight: 500;
+    }
+
+.owl-carousel .owl-item .investor-card-body img {
+    display: block;
+    width: 100px;
+}
+
+.card-img-top {
+    background-color: #343a40;
+}
+
+.card-floating {
+    background: rgba(69, 157, 72, 0.87);
+    color: #fff;
+    padding: 15px;
+    margin-top: -50px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #368639;
+}
+
+.business-detail {
+}
+
+    .business-detail li {
+        margin-bottom: 7px;
+        font-size: 16px;
+        color: #000;
+    }
+
+@media( max-width: 768px) {
+    .card-floating {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .business-detail li {
+        margin-bottom: 7px;
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+.investor-card ul li::before,
+.business-card ul li::before {
+    content: "\2022";
+    color: #61883c;
+    font-weight: bold;
+    display: -webkit-inline-block;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media( max-width: 768px) {
+    .owl-info {
+        width: 100% !important;
+    }
+}
